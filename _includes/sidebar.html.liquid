@@ -32,7 +32,7 @@
                 </div>
                 <div class="contact-info">
                     <p class="contact-title">Email</p>
-                    <a href="mailto:{{ site.user.email }}" class="contact-link">{{ site.user.email }}</a>
+                    <a href="mailto:{{ site.author.email }}" class="contact-link">{{ site.author.email }}</a>
                 </div>
             </li>
 
@@ -42,7 +42,7 @@
                 </div>
                 <div class="contact-info">
                     <p class="contact-title">Phone</p>
-                    <a href="tel:{{ site.user.phone }}" class="contact-link">+1 (213) 352-2795</a>
+                    <a href="tel:{{ site.author.phone }}" class="contact-link">+1 (213) 352-2795</a>
                 </div>
             </li>
 
@@ -54,7 +54,7 @@
 
                 <div class="contact-info">
                     <p class="contact-title">Birthday</p>
-                    <time datetime="{{ site.user.birthday }}">{{ site.user.birthday | date_to_string: "ordinal", "US" }}</time>
+                    <time datetime="{{ site.author.birthday }}">{{ site.author.birthday | date_to_string: "ordinal", "US" }}</time>
                 </div>
 
             </li>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="contact-info">
                     <p class="contact-title">Location</p>
-                    <address>{{ site.user.location }}</address>
+                    <address>{{ site.author.location }}</address>
                 </div>
             </li>
 
@@ -75,17 +75,17 @@
 
         <ul class="social-list">
             <li class="social-item">
-                <a href="{{ site.user.social.facebook }}" class="social-link" target="_blank">
+                <a href="{{ site.author.social.facebook }}" class="social-link" target="_blank">
                     <ion-icon name="logo-facebook"></ion-icon>
                 </a>
             </li>
             <li class="social-item">
-                <a href="{{ site.user.social.twitter }}" class="social-link" target="_blank">
+                <a href="{{ site.author.social.twitter }}" class="social-link" target="_blank">
                     <ion-icon name="logo-twitter"></ion-icon>
                 </a>
             </li>
             <li class="social-item">
-                <a href="{{ site.user.social.instagram }}" class="social-link" target="_blank">
+                <a href="{{ site.author.social.instagram }}" class="social-link" target="_blank">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </li>
