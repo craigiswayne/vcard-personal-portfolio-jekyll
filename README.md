@@ -68,7 +68,6 @@ jekyll serve --config _alternative_config.yml
 * how to absorb feed.xml
 * plugins to use, those that a compatible with github pages
 * Debug page object
-* Debug site config
 * Remove html comments and use liquid comments
 * can we use liquid file types
 * Fork the repo and make changes
