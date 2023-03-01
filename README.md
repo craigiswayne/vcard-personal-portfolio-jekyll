@@ -26,3 +26,49 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
   * Filters on project page?
 * CSS Coverage
 * Filter phone number contact
+* Twitter OG Tags? or maybe just OG Tags in general
+* External packages to use cdns or local packages?
+* SEO plugin?
+* make use of the _data directory [https://jekyllrb.com/docs/structure/](https://jekyllrb.com/docs/structure/
+* post urls ({{ post.url }})
+
+
+
+
+### Backup:
+# Installation
+brew install ruby
+gem install jekyll bundler
+jekyll new blog-site
+bundle exec jekyll serve
+
+---
+
+### Troubleshooting
+Changing the Gemfile, requires:
+```
+#stop server
+bundle install
+jekyll serve
+
+# or
+# bundle exec jekyll serve
+
+```
+
+### Helpful Commands
+See here for a full list: https://jekyllrb.com/docs/usage/
+
+```
+jekyll serve --config _alternative_config.yml
+```
+
+### TODO:
+* create a tool to scrape a wordpress site to jekyll
+* how to absorb feed.xml
+* plugins to use, those that a compatible with github pages
+* Debug page object
+* Debug site config
+* Remove html comments and use liquid comments
+* can we use liquid file types
+* Fork the repo and make changes
