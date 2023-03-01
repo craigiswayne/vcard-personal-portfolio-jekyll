@@ -4,13 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="revised" content="{{ site.time }}" />
     <title>{{ site.title }}</title>
     <link rel="shortcut icon" href="/assets/images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/style.css">
     {% include global/fonts.html.liquid %}
 </head>
 <body>
-{{ content }}
+<main>
+    {% include sidebar.html.liquid %}
+    <div class="main-content">
+
+        {% include navbar.html.liquid %}
+
+        {% if page.path == '/' %}
+            <article class="about active" data-page="about">
+                {% include page-title.html.liquid %}
+                {% include home/about.html.liquid %}
+                {% include home/services.html.liquid %}
+                {% include home/testimonials.html.liquid %}
+                {% include home/clients.html.liquid %}
+            </article>
+        {% endif %}
+
+        {% if page.path == '/resume' %}
+            <article class="resume active" data-page="resume">
+                {% include page-title.html.liquid %}
+                {% include resume/timeline-education.html.liquid %}
+                {% include resume/timeline-experience.html.liquid %}
+                {% include resume/skills.html.liquid %}
+            </article>
+        {% endif %}
+
+        {% if page.path == '/portfolio' %}
+            <article class="portfolio active" data-page="portfolio">
+                {% include page-title.html.liquid %}
+                <section class="projects">
+                    {% include projects/filters.html.liquid %}
+                    {% include projects/project-list.html.liquid %}
+                </section>
+            </article>
+        {% endif %}
+
+        {% if page.path == '/blog' %}
+            <article class="blog active" data-page="blog">
+                {% include page-title.html.liquid %}
+                {% include blog/posts.html.liquid %}
+            </article>
+        {% endif %}
+
+        {% if page.path == '/contact' %}
+            <article class="contact active" data-page="contact">
+                {% include page-title.html.liquid %}
+                {% include contact/map.html.liquid %}
+                {% include contact/form.html.liquid %}
+            </article>
+        {% endif %}
+
+        <article class="active">
+            {{ content }}
+        </article>
+    </div>
+</main>
 {% include global/footer-scripts.html.liquid %}
 </body>
 </html>

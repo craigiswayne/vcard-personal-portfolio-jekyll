@@ -6,7 +6,7 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 ### Debugging Liquid Template
 ```
 <script>
-    console.log('Jekyll Site values', {{ site | jsonify }});
+    console.log('Jekyll Site values', {{ site | inspect }});
 </script>
 ```
 
@@ -20,6 +20,7 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * Each page needs a new slug
 * Css to be split across page types
 * Search page?
+* Collections for portfolio
 * DRY... check out all code and basically prevent dry
   * Posts on blog page
   * Projects on project page
@@ -31,8 +32,10 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * SEO plugin?
 * make use of the _data directory [https://jekyllrb.com/docs/structure/](https://jekyllrb.com/docs/structure/
 * post urls ({{ post.url }})
-
-
+* review list of support jekyll plugins: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins
+* 404 page
+* Review all meta tags https://gist.github.com/lancejpollard/1978404
+* loop through pages on navs and wherever ({{ site.html_pages | jsonify }}})
 
 
 ### Backup:
