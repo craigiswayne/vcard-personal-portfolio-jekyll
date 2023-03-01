@@ -54,24 +54,19 @@
 
                 <div class="contact-info">
                     <p class="contact-title">Birthday</p>
-
-                    <time datetime="1982-06-23">June 23, 1982</time>
+                    <time datetime="{{ site.user.birthday }}">{{ site.user.birthday | date_to_string: "ordinal", "US" }}</time>
                 </div>
 
             </li>
 
             <li class="contact-item">
-
                 <div class="icon-box">
                     <ion-icon name="location-outline"></ion-icon>
                 </div>
-
                 <div class="contact-info">
                     <p class="contact-title">Location</p>
-
-                    <address>Sacramento, California, USA</address>
+                    <address>{{ site.user.location }}</address>
                 </div>
-
             </li>
 
         </ul>
@@ -79,27 +74,22 @@
         <div class="separator"></div>
 
         <ul class="social-list">
-
             <li class="social-item">
                 <a href="#" class="social-link">
                     <ion-icon name="logo-facebook"></ion-icon>
                 </a>
             </li>
-
             <li class="social-item">
                 <a href="#" class="social-link">
                     <ion-icon name="logo-twitter"></ion-icon>
                 </a>
             </li>
-
             <li class="social-item">
                 <a href="#" class="social-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </li>
-
         </ul>
-
     </div>
 
 </aside>

@@ -6,8 +6,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 user:
+  birthday: "1982-06-23"
   email: "richard@example.com"
   phone: "+12133522795"
+  location: "Sacramento, California, USA"
 twitter_username: jekyllrb
 github_username:  jekyll
 
