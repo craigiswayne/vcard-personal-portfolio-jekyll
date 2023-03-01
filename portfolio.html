@@ -1,0 +1,12 @@
+---
+layout: default
+title: 'Portfolio'
+path: '/portfolio'
+---
+<article class="portfolio active">
+    {% include page-title.html.liquid %}
+    <section class="projects">
+        {% include projects/filters.html.liquid %}
+        {% include projects/project-list.html.liquid %}
+    </section>
+</article>
