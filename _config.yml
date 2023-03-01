@@ -10,9 +10,10 @@ user:
   email: "richard@example.com"
   phone: "+12133522795"
   location: "Sacramento, California, USA"
-twitter_username: jekyllrb
-github_username:  jekyll
-
+  social:
+    twitter: "https://twitter.com/codewithsadee"
+    facebook: "https://www.facebook.com/codewithsadee"
+    instagram: "https://www.instagram.com/codewithsadee"
 plugins:
   - jekyll-feed
 exclude:
