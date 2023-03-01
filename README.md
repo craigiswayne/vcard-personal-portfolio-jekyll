@@ -36,6 +36,7 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * 404 page
 * Review all meta tags https://gist.github.com/lancejpollard/1978404
 * loop through pages on navs and wherever ({{ site.html_pages | jsonify }}})
+* Cypress screenshots
 
 
 ### Backup:
