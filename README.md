@@ -43,6 +43,7 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * Next up: collections for testimonials
 * Light theme
 * Project URLs / Individual Page
+* Cheatsheet jekyll: https://gist.github.com/JJediny/a466eed62cee30ad45e2
 
 ### Backup:
 # Installation

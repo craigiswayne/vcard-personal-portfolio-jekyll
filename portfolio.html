@@ -7,6 +7,22 @@ path: '/portfolio'
     {% include page-title.html.liquid %}
     <section class="projects">
         {% include projects/filters.html.liquid %}
-        {% include projects/project-list.html.liquid %}
+        <ul class="project-list">
+            {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
+            {% for project in sortedProjects %}
+            <li class="project-item  active" data-filter-item data-category="{{ project.categories | array_to_sentence_string }}">
+                <a href="{{ project.url }}">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="{{ project.thumbnail }}" alt="{{ project.title }}" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">{{ project.title }}</h3>
+                    <p class="project-category">{{ project.categories | array_to_sentence_string }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
     </section>
 </article>
