@@ -1,0 +1,8 @@
+- name: Web Design
+  proficiencyPercent: 80
+- name: Graphic Design
+  proficiencyPercent: 70
+- name: Branding
+  proficiencyPercent: 90
+- name: WordPress
+  proficiencyPercent: 50
