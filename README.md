@@ -38,6 +38,11 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * loop through pages on navs and wherever ({{ site.html_pages | jsonify }}})
 * Cypress screenshots
 * Avatar Sad created with: https://readyplayer.me/hub/avatars
+* Where to find site to generate avatar images
+* Tracking configs
+* Next up: collections for testimonials
+* Light theme
+* Project URLs / Individual Page
 
 ### Backup:
 # Installation
