@@ -47,6 +47,7 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * Should the project categories selection be a separate page? -> could remove js if it is
 * move page title to default layout
 * archive pages for the following: http://127.0.0.1:4000/design/2022/02/23/best-fonts-every-designer.html
+* Make sure the testimonial modal is working correctly
 
 ### Backup:
 # Installation

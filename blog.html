@@ -17,7 +17,7 @@ path: '/blog'
                         <div class="blog-meta">
                             <p class="blog-category">{{ post.categories | array_to_sentence_string }}</p>
                             <span class="dot"></span>
-                            <time datetime="{{ post.date }}">{{ post.date | date_to_striFng: "ordinal", "US" }}</time>
+                            <time datetime="{{ post.date }}">{{ post.date | date_to_string: "ordinal", "US" }}</time>
                         </div>
                         <h3 class="h3 blog-item-title">{{ post.title }}</h3>
                         <p class="blog-text">{{ post.excerpt | strip_html }}</p>
