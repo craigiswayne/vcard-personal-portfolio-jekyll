@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="revised" content="{{ site.time }}" />
+    <meta name="author" content="{{ site.author.name }}" />
+    <meta name="description" content="{{ site.author.name }} Portfolio" />
+    <meta name="keywords" content="Web, Portfolio, Developer" />
     <title>{{ site.title }}</title>
-    <link rel="shortcut icon" href="/assets/images/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     {% include global/fonts.html.liquid %}
 </head>
 <body>
