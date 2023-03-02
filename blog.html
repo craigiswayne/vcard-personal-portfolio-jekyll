@@ -5,5 +5,26 @@ path: '/blog'
 ---
 <article class="blog active">
     {% include page-title.html.liquid %}
-    {% include blog/posts.html.liquid %}
+    <section class="blog-posts">
+        <ul class="blog-posts-list">
+            {% for post in site.posts %}
+            <li class="blog-post-item">
+                <a href="{{ post.url }}">
+                    <figure class="blog-banner-box">
+                        <img src="{{ post.thumbnail }}" alt="{{ post.title }}" loading="lazy" />
+                    </figure>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <p class="blog-category">{{ post.categories | array_to_sentence_string }}</p>
+                            <span class="dot"></span>
+                            <time datetime="{{ post.date }}">{{ post.date | date_to_striFng: "ordinal", "US" }}</time>
+                        </div>
+                        <h3 class="h3 blog-item-title">{{ post.title }}</h3>
+                        <p class="blog-text">{{ post.excerpt | strip_html }}</p>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
 </article>

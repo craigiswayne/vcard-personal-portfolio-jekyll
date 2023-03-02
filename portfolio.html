@@ -6,10 +6,40 @@ path: '/portfolio'
 <article class="portfolio active">
     {% include page-title.html.liquid %}
     <section class="projects">
-        {% include projects/filters.html.liquid %}
+        {% assign projectCategories = site.projects | group_by: "category" | sort: "name" %}
+        <ul class="filter-list">
+            <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+            </li>
+
+            {% for projectCategory in projectCategories %}
+            <li class="filter-item">
+                <button data-filter-btn>{{ projectCategory.name }}</button>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="filter-select-box">
+            <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>Select category</div>
+                <div class="select-icon">
+                    <ion-icon name="chevron-down"></ion-icon>
+                </div>
+            </button>
+
+            <ul class="select-list">
+                <li class="select-item">
+                    <button data-select-item>All</button>
+                </li>
+                {% for projectCategory in projectCategories %}
+                <li class="select-item">
+                    <button data-select-item>{{ projectCategory.name }}</button>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
         <ul class="project-list">
-            {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
-            {% for project in sortedProjects %}
+            {% assign projectsSortedDESC = site.projects | sort: 'date' | reverse %}
+            {% for project in projectsSortedDESC %}
             <li class="project-item  active" data-filter-item data-category="{{ project.categories | array_to_sentence_string }}">
                 <a href="{{ project.url }}">
                     <figure class="project-img">
