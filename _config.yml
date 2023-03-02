@@ -10,6 +10,8 @@ collections:
     output: true
   testimonials:
     output: true
+  clients:
+    output: true
 author:
   name: "Richard Hanrick"
   birthday: "1982-06-23"
