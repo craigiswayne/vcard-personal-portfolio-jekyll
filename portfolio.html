@@ -4,7 +4,7 @@ title: 'Portfolio'
 path: '/portfolio'
 ---
 <article class="portfolio active">
-    {% include page-title.html.liquid %}
+    {% include global/page-title.html.liquid %}
     <section class="projects">
         {% assign projectCategories = site.projects | group_by: "category" | sort: "name" %}
         <ul class="filter-list">
