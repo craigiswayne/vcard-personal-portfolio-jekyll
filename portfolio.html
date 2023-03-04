@@ -5,54 +5,58 @@ path: '/portfolio'
 ---
 <article class="portfolio active">
     {% include global/page-title.html.liquid %}
-    <section class="projects">
-        {% assign projectCategories = site.projects | group_by: "category" | sort: "name" %}
-        <ul class="filter-list">
-            <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-            </li>
-
-            {% for projectCategory in projectCategories %}
-            <li class="filter-item">
-                <button data-filter-btn>{{ projectCategory.name }}</button>
-            </li>
-            {% endfor %}
-        </ul>
-        <div class="filter-select-box">
-            <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>Select category</div>
-                <div class="select-icon">
-                    <ion-icon name="chevron-down"></ion-icon>
-                </div>
-            </button>
-
-            <ul class="select-list">
-                <li class="select-item">
-                    <button data-select-item>All</button>
+    {% if site.projects.size > 0 %}
+        <section class="projects">
+            {% assign projectCategories = site.projects | group_by: "category" | sort: "name" %}
+            <ul class="filter-list">
+                <li class="filter-item">
+                    <button class="active" data-filter-btn>All</button>
                 </li>
+
                 {% for projectCategory in projectCategories %}
-                <li class="select-item">
-                    <button data-select-item>{{ projectCategory.name }}</button>
+                <li class="filter-item">
+                    <button data-filter-btn>{{ projectCategory.name }}</button>
                 </li>
                 {% endfor %}
             </ul>
-        </div>
-        <ul class="project-list">
-            {% assign projectsSortedDESC = site.projects | sort: 'date' | reverse %}
-            {% for project in projectsSortedDESC %}
-            <li class="project-item  active" data-filter-item data-category="{{ project.categories | array_to_sentence_string }}">
-                <a href="{{ project.url }}">
-                    <figure class="project-img">
-                        <div class="project-item-icon-box">
-                            <ion-icon name="eye-outline"></ion-icon>
-                        </div>
-                        <img src="{{ project.thumbnail }}" alt="{{ project.title }}" loading="lazy">
-                    </figure>
-                    <h3 class="project-title">{{ project.title }}</h3>
-                    <p class="project-category">{{ project.categories | array_to_sentence_string }}</p>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
+            <div class="filter-select-box">
+                <button class="filter-select" data-select>
+                    <div class="select-value" data-selecct-value>Select category</div>
+                    <div class="select-icon">
+                        <ion-icon name="chevron-down"></ion-icon>
+                    </div>
+                </button>
+
+                <ul class="select-list">
+                    <li class="select-item">
+                        <button data-select-item>All</button>
+                    </li>
+                    {% for projectCategory in projectCategories %}
+                    <li class="select-item">
+                        <button data-select-item>{{ projectCategory.name }}</button>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <ul class="project-list">
+                {% assign projectsSortedDESC = site.projects | sort: 'date' | reverse %}
+                {% for project in projectsSortedDESC %}
+                <li class="project-item  active" data-filter-item data-category="{{ project.categories | array_to_sentence_string }}">
+                    <a href="{{ project.url }}">
+                        <figure class="project-img">
+                            <div class="project-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="{{ project.thumbnail }}" alt="{{ project.title }}" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">{{ project.title }}</h3>
+                        <p class="project-category">{{ project.categories | array_to_sentence_string }}</p>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    {% else %}
+        <p>Add your projects into the <code>_projects</code> folder</p>
+    {% endif %}
 </article>

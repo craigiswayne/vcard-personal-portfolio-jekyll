@@ -5,8 +5,8 @@ path: '/blog'
 ---
 <article class="blog active">
     {% include global/page-title.html.liquid %}
-    <section class="blog-posts">
-        {% if site.posts.length > 0 %}
+    {% if site.posts.size > 0 %}
+        <section class="blog-posts">
             <ul class="blog-posts-list">
             {% for post in site.posts %}
             <li class="blog-post-item">
@@ -27,8 +27,8 @@ path: '/blog'
             </li>
             {% endfor %}
         </ul>
-        {% else %}
-            <p>No posts</p>
-        {% endif %}
-    </section>
+        </section>
+    {% else %}
+        <p>Add your posts into the <code>_posts</code> folder</p>
+    {% endif %}
 </article>
