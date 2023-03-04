@@ -1,12 +1,5 @@
 <section class="timeline">
-
-    <div class="title-wrapper">
-        <div class="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
-        </div>
-        <h3 class="h3">Experience</h3>
-    </div>
-
+    {% include timeline/title.html.liquid title="Experience" %}
     <ol class="timeline-list">
         {% for experience in site.data.experience %}
             <li class="timeline-item">
@@ -18,5 +11,4 @@
             </li>
         {% endfor %}
     </ol>
-
 </section>

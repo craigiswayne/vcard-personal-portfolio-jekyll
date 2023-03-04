@@ -47,7 +47,6 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * prefers reduced motion
 * create a tool to scrape a wordpress site to jekyll
 * how to absorb feed.xml
-* timeline partial
 
 ### Backup:
 # Installation
