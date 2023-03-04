@@ -19,8 +19,6 @@ defaults:
 collections:
   projects:
     output: true
-  testimonials:
-    output: true
 author:
   name: "Richard Hanrick"
   birthday: "1982-06-23"
