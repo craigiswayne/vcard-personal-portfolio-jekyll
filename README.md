@@ -22,18 +22,13 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * Search page?
 * Collections for portfolio
 * DRY... check out all code and basically prevent dry
-  * Posts on blog page
-  * Projects on project page
-  * Filters on project page?
 * CSS Coverage
 * Filter phone number contact
 * Twitter OG Tags? or maybe just OG Tags in general
 * External packages to use cdns or local packages?
 * SEO plugin?
-* make use of the _data directory [https://jekyllrb.com/docs/structure/](https://jekyllrb.com/docs/structure/
 * post urls ({{ post.url }})
 * review list of support jekyll plugins: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins
-* 404 page
 * Review all meta tags https://gist.github.com/lancejpollard/1978404
 * loop through pages on navs and wherever ({{ site.html_pages | jsonify }}})
 * Cypress screenshots
@@ -52,11 +47,7 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * prefers reduced motion
 * create a tool to scrape a wordpress site to jekyll
 * how to absorb feed.xml
-* plugins to use, those that a compatible with github pages
-* Debug page object
-* Remove html comments and use liquid comments
-* can we use liquid file types
-* Fork the repo and make changes
+* timeline partial
 
 ### Backup:
 # Installation
