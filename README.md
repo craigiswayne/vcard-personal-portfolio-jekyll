@@ -50,6 +50,13 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * Make sure the testimonial modal is working correctly
 * Light mode / dark mode
 * prefers reduced motion
+* create a tool to scrape a wordpress site to jekyll
+* how to absorb feed.xml
+* plugins to use, those that a compatible with github pages
+* Debug page object
+* Remove html comments and use liquid comments
+* can we use liquid file types
+* Fork the repo and make changes
 
 ### Backup:
 # Installation
@@ -78,12 +85,3 @@ See here for a full list: https://jekyllrb.com/docs/usage/
 ```
 jekyll serve --config _alternative_config.yml
 ```
-
-### TODO:
-* create a tool to scrape a wordpress site to jekyll
-* how to absorb feed.xml
-* plugins to use, those that a compatible with github pages
-* Debug page object
-* Remove html comments and use liquid comments
-* can we use liquid file types
-* Fork the repo and make changes
