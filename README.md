@@ -16,6 +16,11 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 
 
 ### TODO:
+* Sass within the jekyll framework
+  * https://github.com/jekyll/jekyll-sass-converter#usage
+  * https://github.com/jekyll/jekyll-sass-converter
+  * https://github.com/jekyll/jekyll-sass-converter/blob/master/docs/assets/css/main.scss
+  * https://github.com/jekyll/jekyll-sass-converter/blob/master/docs/_sass/_typography.scss
 * Testimonials need to pull from config
 * Each page needs a new slug
 * Css to be split across page types
