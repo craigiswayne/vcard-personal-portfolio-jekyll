@@ -4,7 +4,7 @@ path: '/resume'
 ---
 <article class="resume active">
     {% include global/page-title.html.liquid %}
-    {% include resume/timeline-education.html.liquid %}
-    {% include resume/timeline-experience.html.liquid %}
+    {% include resume/timeline.html.liquid title="Education" items=site.data.education itemTitlePropertyName="institute" %}
+    {% include resume/timeline.html.liquid title="Experience" items=site.data.experience itemTitlePropertyName="position" %}
     {% include resume/skills.html.liquid %}
 </article>
