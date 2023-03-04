@@ -1,12 +1,11 @@
 <section class="clients">
     <h3 class="h3 clients-title">Clients</h3>
     <ul class="clients-list has-scrollbar">
-        {% assign clientsSortedDESC = site.clients | sort: 'date' | reverse %}
-        {% for client in clientsSortedDESC %}
+        {% for client in site.data.clients %}
             <li class="clients-item">
-                <a href="#">
-                    <img src="{{ client.logo }}" alt="{{ client.name }} logo" />
-                </a>
+                <div href="#">
+                    <img src="{{ client.imageURL }}" alt="{{ client.name }} logo" />
+                </div>
             </li>
         {% endfor %}
     </ul>
