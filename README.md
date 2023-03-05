@@ -54,6 +54,12 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * prefers reduced motion
 * create a tool to scrape a wordpress site to jekyll
 * how to absorb feed.xml
+* remove need for active classes
+* sass mixin for media queries
+* css for pages
+* css code coverage
+* js code coverage
+* css palette
 
 ### Backup:
 # Installation

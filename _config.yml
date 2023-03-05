@@ -26,6 +26,7 @@ author:
   position: "Web developer"
   email: "richard@example.com"
   phone: "+12133522795"
+  phoneFriendly: "+1 (213) 352-2795"
   social:
     twitter: "https://twitter.com/codewithsadee"
     facebook: "https://www.facebook.com/codewithsadee"
