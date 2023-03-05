@@ -16,6 +16,8 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 
 
 ### TODO:
+* try see if you can set custom paths for files in the config file
+* custom filter for jekyll, do it on the phone number
 * Sass within the jekyll framework
   * https://github.com/jekyll/jekyll-sass-converter#usage
   * https://github.com/jekyll/jekyll-sass-converter
