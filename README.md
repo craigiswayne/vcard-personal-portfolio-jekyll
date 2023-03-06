@@ -35,7 +35,7 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * External packages to use cdns or local packages?
 * SEO plugin?
 * post urls ({{ post.url }})
-* review list of support jekyll plugins: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins
+* [review list of support jekyll plugins](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins)
 * Review all meta tags https://gist.github.com/lancejpollard/1978404
 * loop through pages on navs and wherever ({{ site.html_pages | jsonify }}})
 * Cypress screenshots
@@ -55,7 +55,7 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * create a tool to scrape a wordpress site to jekyll
 * how to absorb feed.xml
 * remove need for active classes
-* sass mixin for media queries
+* sass mixing for media queries
 * css for pages
 * css code coverage
 * js code coverage

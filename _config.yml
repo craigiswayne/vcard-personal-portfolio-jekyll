@@ -33,6 +33,7 @@ author:
     instagram: "https://www.instagram.com/codewithsadee"
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 exclude:
   - .idea
   - README.md
