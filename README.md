@@ -95,15 +95,10 @@ Then run `bundle update`
 ---
 
 ### Troubleshooting
-Changing the Gemfile, requires:
+After making changes to the Gemfile, stop the server and...
 ```
-#stop server
 bundle install
-jekyll serve
-
-# or
-# bundle exec jekyll serve
-
+bundle exec jekyll serve
 ```
 
 ### Helpful Commands
