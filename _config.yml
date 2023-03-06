@@ -34,6 +34,8 @@ author:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+sass:
+  style: compressed
 exclude:
   - .idea
   - README.md
