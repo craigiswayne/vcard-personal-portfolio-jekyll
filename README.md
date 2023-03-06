@@ -60,6 +60,19 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * css code coverage
 * js code coverage
 * css palette
+* pwa tests
+* github tags for the following: jekyll-theme jekyll-template responsive-web-design pwa jamstack
+* checkout chirpy theme `jekyll-theme-chipry`
+* maybe a new repo called `jekyll-theme-vcard-personal-portfolio`
+* search function, checkout chirpy
+* checkout all the settings from the chirpy repo
+* dockerfile that contains all the ruby shit?
+* code snippets using what chirpy does, love the copy command
+* dala pwa
+* themes for notable periods in the year and use js to load the stylesheets
+  * default stylesheet is grayscale?
+  * and js loads just the variables?
+  * halloween?
 
 ### Backup:
 # Installation

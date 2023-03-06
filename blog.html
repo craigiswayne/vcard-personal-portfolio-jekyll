@@ -15,7 +15,7 @@ path: '/blog'
                     </figure>
                     <div class="blog-content">
                         <div class="blog-meta">
-                            <p class="blog-category">{{ post.categories | array_to_sentence_string }}</p>
+                            <p class="blog-category">{{ post.categories | first }}</p>
                             <span class="dot"></span>
                             <time datetime="{{ post.date }}">{{ post.date | date_to_string: "ordinal", "US" }}</time>
                         </div>
