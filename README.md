@@ -81,6 +81,17 @@ gem install jekyll bundler
 jekyll new blog-site
 bundle exec jekyll serve
 
+### Installs Plugins
+Update the `Gemfile` section where plugins are listed
+```
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-sitemap"
+end
+```
+
+Then run `bundle update`
+
 ---
 
 ### Troubleshooting
