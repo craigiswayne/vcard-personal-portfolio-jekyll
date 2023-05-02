@@ -3,6 +3,9 @@ This for just adapts the original repo for Jekyll
 
 Please refer to the original repo here [https://github.com/codewithsadee/vcard-personal-portfolio](https://github.com/codewithsadee/vcard-personal-portfolio)
 
+## Avatar / Emoji / Memoji
+You can find the collection here: https://www.figma.com/community/file/913339145625776252
+
 ### Debugging Liquid Template
 ```
 <script>
@@ -18,11 +21,6 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 ### TODO:
 * try see if you can set custom paths for files in the config file
 * custom filter for jekyll, do it on the phone number
-* Sass within the jekyll framework
-  * https://github.com/jekyll/jekyll-sass-converter#usage
-  * https://github.com/jekyll/jekyll-sass-converter
-  * https://github.com/jekyll/jekyll-sass-converter/blob/master/docs/assets/css/main.scss
-  * https://github.com/jekyll/jekyll-sass-converter/blob/master/docs/_sass/_typography.scss
 * Testimonials need to pull from config
 * Each page needs a new slug
 * Css to be split across page types
@@ -40,7 +38,6 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
 * loop through pages on navs and wherever ({{ site.html_pages | jsonify }}})
 * Cypress screenshots
 * Avatar Sad created with: https://readyplayer.me/hub/avatars
-* Where to find site to generate avatar images
 * Tracking configs
 * Next up: collections for testimonials
 * Light theme
@@ -73,6 +70,25 @@ Please refer to the original repo here [https://github.com/codewithsadee/vcard-p
   * default stylesheet is grayscale?
   * and js loads just the variables?
   * halloween?
+* archives, taken from: https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml
+```
+  # Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
+category_archive:
+type: liquid
+path: /categories/
+tag_archive:
+type: liquid
+path: /tags/
+```
 
 ### Backup:
 # Installation
