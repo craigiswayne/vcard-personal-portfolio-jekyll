@@ -3,6 +3,12 @@ This for just adapts the original repo for Jekyll
 
 Please refer to the original repo here [https://github.com/codewithsadee/vcard-personal-portfolio](https://github.com/codewithsadee/vcard-personal-portfolio)
 
+## Getting Started
+Start the server
+```shell
+bundle exec jekyll serve
+```
+
 ## Avatar / Emoji / Memoji
 You can find the collection here: https://www.figma.com/community/file/913339145625776252
 
