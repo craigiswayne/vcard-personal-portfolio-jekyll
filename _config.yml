@@ -1,15 +1,14 @@
 title: vCard - Personal Portfolio
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# Jekyll Defaults Documentation: https://jekyllrb.com/docs/configuration/default/
+baseurl: ""
+url: ""
 permalink: /:categories/:year/:month/:day/:title
 defaults:
   - scope:
-      path: "" # an empty string here means all files in the project
+      path: ""
     values:
       layout: "default"
   - scope:
@@ -25,6 +24,14 @@ defaults:
 collections:
   projects:
     output: true
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+sass:
+  style: compressed
+exclude:
+  - .idea
+  - README.md
 author:
   name: "Richard Hanrick"
   birthday: "1982-06-23"
@@ -38,11 +45,3 @@ author:
     twitter: "https://twitter.com/codewithsadee"
     facebook: "https://www.facebook.com/codewithsadee"
     instagram: "https://www.instagram.com/codewithsadee"
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-sass:
-  style: compressed
-exclude:
-  - .idea
-  - README.md

@@ -37,7 +37,6 @@ You can find the collection here: https://www.figma.com/community/file/913339145
 * Testimonials need to pull from config
 * Css to be split across page types
 * Search page?
-* DRY... check out all code and basically prevent dry
 * CSS Coverage
 * Filter phone number contact
 * Twitter OG Tags? or maybe just OG Tags in general
