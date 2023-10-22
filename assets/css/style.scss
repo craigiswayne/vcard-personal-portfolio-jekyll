@@ -1,6 +1,7 @@
 ---
 # Jekyll will automatically compile this file to css
 # see: https://jekyllrb.com/docs/assets/
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
 /**
  * copyright 2022 @codewithsadee
@@ -1330,16 +1331,9 @@ textarea.form-input::-webkit-resizer {
   background: var(--bg-gradient-jet);
 }
 
+@import '_mixins';
 
-/*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
-
-/**
- * responsive larger than 450px screen
- */
-
-@media (min-width: 450px) {
+@include screen-xsmall {
 
   /**
    * client
@@ -1361,12 +1355,7 @@ textarea.form-input::-webkit-resizer {
 
 }
 
-
-/**
- * responsive larger than 580px screen
- */
-
-@media (min-width: 580px) {
+@include screen-small {
 
   /**
    * CUSTOM PROPERTY
@@ -1702,12 +1691,7 @@ textarea.form-input::-webkit-resizer {
 
 }
 
-
-/**
- * responsive larger than 768px screen
- */
-
-@media (min-width: 768px) {
+@include screen-medium {
 
   /**
    * REUSED STYLE
@@ -1814,12 +1798,7 @@ textarea.form-input::-webkit-resizer {
 
 }
 
-
-/**
- * responsive larger than 1024px screen
- */
-
-@media (min-width: 1024px) {
+@include screen-large {
 
   /**
    * CUSTOM PROPERTY
@@ -1932,13 +1911,7 @@ textarea.form-input::-webkit-resizer {
 
 }
 
-
-/**
- * responsive larger than 1250px screen
- */
-
-@media (min-width: 1250px) {
-
+@include screen-xlarge {
   /**
    * RESET
    */
@@ -2066,13 +2039,7 @@ textarea.form-input::-webkit-resizer {
     justify-content: center;
   }
 
-
-  /**
-	 * RESUME
-	 */
-
   .timeline-text {
     max-width: 700px;
   }
-
 }
