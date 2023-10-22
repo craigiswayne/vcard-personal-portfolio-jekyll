@@ -1,19 +1,11 @@
+{% assign navbar_pages = site.pages | where_exp: "_page", "_page.navbar_order >= 1" | sort: "navbar_order" %}
+
 <nav class="navbar">
     <ul class="navbar-list">
-        <li class="navbar-item">
-            <a class="navbar-link {% if page.url == '/' %}active{% endif %}" href="/">About</a>
-        </li>
-        <li class="navbar-item">
-            <a class="navbar-link {% if page.url == '/resume' %}active{% endif %}" href="/resume">Resume</a>
-        </li>
-        <li class="navbar-item">
-            <a class="navbar-link {% if page.url == '/portfolio' %}active{% endif %}" href="/portfolio">Portfolio</a>
-        </li>
-        <li class="navbar-item">
-            <a class="navbar-link {% if page.url == '/blog' %}active{% endif %}" href="/blog">Blog</a>
-        </li>
-        <li class="navbar-item">
-            <a class="navbar-link {% if page.url == '/contact' %}active{% endif %}" href="/contact">Contact</a>
-        </li>
+        {% for link in navbar_pages %}
+            <li class="navbar-item test">
+                <a class="navbar-link {% if page.url == link.url %}active{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+        {% endfor %}
     </ul>
 </nav>
