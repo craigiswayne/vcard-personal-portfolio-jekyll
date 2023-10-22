@@ -35,10 +35,8 @@ You can find the collection here: https://www.figma.com/community/file/913339145
 * [ ] Light / Dark mode
 * custom filter for jekyll, do it on the phone number
 * Testimonials need to pull from config
-* Each page needs a new slug
 * Css to be split across page types
 * Search page?
-* Collections for portfolio
 * DRY... check out all code and basically prevent dry
 * CSS Coverage
 * Filter phone number contact
