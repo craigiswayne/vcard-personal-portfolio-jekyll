@@ -3,13 +3,13 @@
     <div class="sidebar-info">
 
         <figure class="avatar-box">
-            <img src="/assets/images/my-avatar.png" alt="Richard hanrick" width="80" height="79">
+            <img src="/assets/images/my-avatar.png" alt="{{ site.author.name }}" width="80" height="79" />
         </figure>
 
         <div class="info-content">
             <h1 class="name" title="{{ site.author.name }}">{{ site.author.name }}</h1>
 
-            <p class="title">Web developer</p>
+            <p class="title">{{ site.author.position }}</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,21 +74,13 @@
         <div class="separator"></div>
 
         <ul class="social-list">
-            <li class="social-item">
-                <a href="{{ site.author.social.facebook }}" class="social-link" target="_blank">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-            </li>
-            <li class="social-item">
-                <a href="{{ site.author.social.twitter }}" class="social-link" target="_blank">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-            </li>
-            <li class="social-item">
-                <a href="{{ site.author.social.instagram }}" class="social-link" target="_blank">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </li>
+            {% for social in site.author.social %}
+                <li class="social-item">
+                    <a href="{{ social[1] }}" class="social-link" target="_blank">
+                        <ion-icon name="logo-{{ social[0] }}"></ion-icon>
+                    </a>
+                </li>
+            {% endfor %}
         </ul>
     </div>
 

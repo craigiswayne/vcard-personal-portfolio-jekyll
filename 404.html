@@ -1,10 +1,38 @@
 ---
 title: Not Found
 last_modified_at: 2023-03-06 21:43
+layout: blank
 ---
+<style>
+    .row {
+        display: flex;
+    }
+
+    .row .image-container {
+        margin-left: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .row .image-container img {
+        max-width: 150px;
+    }
+
+    .row .image-container .navbar-link {
+        padding: 0;
+    }
+</style>
 <article class="active">
-    {% include global/page-title.html.liquid %}
-    <section>
-        <p>Unfortunately the page you're looking for does not exist</p>
+    <section class="row">
+        <div>
+            {% include global/page-title.html.liquid %}
+            <p>Unfortunately the page you're looking for does not exist</p>
+        </div>
+        <div class="image-container">
+            <img src="/assets/images/avatar-404.png" alt="concerned person" />
+            <a href="/" class="navbar-link active">Back home</a>
+        </div>
     </section>
 </article>

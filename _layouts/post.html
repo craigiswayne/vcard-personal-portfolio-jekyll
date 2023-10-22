@@ -2,7 +2,13 @@
 layout: default
 ---
 <article class="portfolio active">
-    {% include global/page-title.html.liquid title="Blog" %}
+
+    {% if page.collection == 'projects' %}
+        {% include global/page-title.html.liquid title='Projects' %}
+    {% else %}
+        {% include global/page-title.html.liquid title='Blog' %}
+    {% endif %}
+
     <h1 class="h2">{{page.title}}</h1>
     <img src="{{page.thumbnail}}" loading="lazy" title="Blog thumbnail"/>
 
