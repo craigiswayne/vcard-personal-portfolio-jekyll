@@ -3,6 +3,7 @@
 # see: https://jekyllrb.com/docs/assets/
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+@import '_mixins';
 /**
  * copyright 2022 @codewithsadee
  */
@@ -296,8 +297,7 @@ article.active {
 .content-card {
   position: relative;
   background: var(--border-gradient-onyx);
-  padding: 15px;
-  padding-top: 45px;
+  padding: 45px 15px 15px 15px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   cursor: pointer;
@@ -612,8 +612,7 @@ main {
   align-items: flex-start;
   gap: 15px;
   margin: 0 -15px;
-  padding: 25px 15px;
-  padding-bottom: 35px;
+  padding: 25px 15px 35px 15px;
   overflow-x: auto;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
@@ -789,7 +788,6 @@ main {
   gap: 15px;
   margin: 0 -15px;
   padding: 25px;
-  padding-bottom: 25px;
   overflow-x: auto;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
@@ -1330,8 +1328,6 @@ textarea.form-input::-webkit-resizer {
 .form-btn:disabled:hover::before {
   background: var(--bg-gradient-jet);
 }
-
-@import '_mixins';
 
 @include screen-xsmall {
 
